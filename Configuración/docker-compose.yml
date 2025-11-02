@@ -38,7 +38,7 @@ services:
     volumes:
       #- /pon/tu/ruta/aqui:/home/jovyan 
       # Mapea la carpeta de trabajo local a la ruta del contenedor donde Jupyter almacenará los notebooks.
-      - /Users/giovannyhidalgo/Documents/jupyter/work:/home/jovyan
+      - ./volumes/jupyter/work:/home/jovyan
     ports:
       - "8888:8888"
     # El servicio Jupyter Notebook se iniciará con el nombre de contenedor 'jupyter_notebook'.
